@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Currency Converter</h1>
+            <p>Convert the most popular currencies in Poland</p> 
+        </header>
+
+        <div class="date"></div>
+
+        <ul class="currencies">
+            <li class="currency base-currency" id="PLN">
+                <img src="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/128/Poland-icon.png" alt="Polish flag" class="flag">
+                <div class="info">
+                    <p class="input"><input id="input-PLN"  class="input-currency" placeholder="0.0000">
+                    </p>
+                    <p id="PLN-currency" class="currency-name">PLN</p>
+                </div>
+            </li>
+
+            <li class="currency" id="Euro">
+                <img src="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/128/European-union-icon.png" alt="EU flag" class="flag">
+                <div class="info">
+                    <p class="input"><input id="input-Euro"  class="input-currency" placeholder="0.0000">
+                    </p>
+                    <p id="Euro-currency" class="currency-name">Euro</p>
+                </div>
+            </li>
+
+            <li class="currency" id="GBP">
+                <img src="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/128/United-kingdom-icon.png" alt="GB flag" class="flag">
+                <div class="info">
+                    <p class="input"><input id="input-GBP"  class="input-currency" placeholder="0.0000">
+                    </p>
+                    <p id="GBP-currency" class="currency-name"></p>
+                </div>
+            </li>
+
+            <li class="currency" id="USD">
+                <img src="http://icons.iconarchive.com/icons/custom-icon-design/round-world-flags/128/USA-icon.png" alt="USA flag" class="flag">
+                <div class="info">
+                    <p class="input"><input id="input-USD" class="input-currency" placeholder="0.0000">
+                    </p>
+                    <p id="USD-currency" class="currency-name">USD</p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="clear-btn">Click to clear the values</button>
+    </div>
+
+    <script src="src/js/jquery-3.4.1.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>
